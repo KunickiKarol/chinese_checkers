@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "Server.GameData" table = "gra">
+
+        <meta attribute = "class-description">
+            This class contains the board detail.
+        </meta>
+
+        <id name = "NrGRY" type = "int" column = "NrGRY">
+            <generator class="native"/>
+        </id>
+
+        <property name = "Plansza" column = "Plansza" type = "string"/>
+        <property name = "Gracze" column = "Gracze" type = "int"/>
+        <property name = "ksztalt" column = "Ksztalt" type = "string"/>
+
+
+    </class>
+</hibernate-mapping>
